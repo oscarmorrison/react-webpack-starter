@@ -36,3 +36,8 @@ this starter uses `yarn` by default, it includes the following yarn scripts:
 `watch`: ./node_modules/.bin/webpack -d --watch  
 `dev`: ./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors  
 `build`: NODE_ENV=production ./node_modules/.bin/webpack -p  
+
+## how to use
+You can [download](https://github.com/oscarmorrison/react-webpack-starter/archive/master.zip) the repo from here, and update the `package.json`, or alternative clone the repo:  
+`git clone git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
+then delete the .git dir, or change the repository url
