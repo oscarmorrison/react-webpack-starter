@@ -32,7 +32,7 @@ presets: `es2015`, `react`
 `file-loader`
 
 ### yarn 
-this starter uses `yarn` by default, it includes the following yarn scripts:
+this starter uses `yarn` by default, it includes the following yarn scripts:  
 `watch`: ./node_modules/.bin/webpack -d --watch  
 `dev`: ./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors  
 `build`: NODE_ENV=production ./node_modules/.bin/webpack -p  
