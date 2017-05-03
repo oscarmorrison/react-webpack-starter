@@ -21,6 +21,7 @@ starter repo available.
 ```
 
 ## webpack setup
+(using webpack 1.13, will upgrade to use webpack 2)
 webpack has a basic setup, with autoprefixer, webpack copy plugin,
 and separate webpack prod and dev config.
 
