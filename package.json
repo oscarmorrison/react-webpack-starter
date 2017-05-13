@@ -7,8 +7,12 @@
     "watch": "./node_modules/.bin/webpack -d --watch",
     "dev": "./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack -p",
-    "test": "./node_modules/.bin/jest",
-    "test:watch": "./node_modules/.bin/jest --watch"
+    "test": "yarn test:jest && yarn lint",
+    "test:watch": "yarn jest:watch && yarn lint:watch",
+    "test:jest": "./node_modules/.bin/jest",
+    "jest:watch": "./node_modules/.bin/jest --watch",
+    "lint": "./node_modules/.bin/eslint src/js test --ext .js --ext .jsx",
+    "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear"
   },
   "author": "oscar",
   "license": "ISC",
@@ -33,19 +37,79 @@
       }
     }
   },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true,
+      "jest": true
+    },
+    "extends": "airbnb",
+    "plugins": [
+      "import",
+      "jsx-a11y",
+      "react"
+    ],
+    "rules": {
+      "indent": [
+        2,
+        4
+      ],
+      "max-len": [
+        0
+      ],
+      "no-param-reassign": [
+        0
+      ],
+      "react/forbid-prop-types": [
+        0
+      ],
+      "react/jsx-indent-props": [
+        2,
+        4
+      ],
+      "react/jsx-indent": [
+        0
+      ],
+      "react/prefer-stateless-function": [
+        0
+      ],
+      "react/prop-types": [
+        0
+      ],
+      "react/jsx-space-before-closing": [
+        0
+      ],
+      "react/no-multi-comp": [
+        0
+      ],
+      "no-mixed-operators": [
+        0
+      ],
+      "arrow-body-style": [
+        0
+      ]
+    }
+  },
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
   },
   "devDependencies": {
+    "autoprefixer": "^7.0.1",
     "babel-core": "^6.24.1",
+    "babel-eslint": "6",
     "babel-loader": "^7.0.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "autoprefixer": "^7.0.1",
     "copy-webpack-plugin": "^4.0.1",
     "css-loader": "^0.26.0",
+    "eslint": "3.x",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "4",
+    "eslint-plugin-react": "^7.0.1",
+    "eslint-watch": "^3.1.0",
     "file-loader": "^0.9.0",
     "jest": "^20.0.1",
     "node-sass": "^3.13.0",
@@ -53,8 +117,8 @@
     "sass-loader": "^4.0.2",
     "style-loader": "^0.13.1",
     "webpack": "^2.5.1",
-    "webpack-merge": "^4.1.0",
     "webpack-dev-server": "^2.4.5",
+    "webpack-merge": "^4.1.0",
     "webpack-notifier": "^1.5.0"
   }
 }
