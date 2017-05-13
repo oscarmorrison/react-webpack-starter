@@ -1,6 +1,5 @@
 # React, Webpack, Babel, Jest, ESLint Starter  
-[![Build Status]
-(https://travis-ci.org/oscarmorrison/react-webpack-starter.svg?branch=master)](https://travis-ci.org/oscarmorrison/react-webpack-starter)
+[![Build Status](https://travis-ci.org/oscarmorrison/react-webpack-starter.svg?branch=master)](https://travis-ci.org/oscarmorrison/react-webpack-starter)
 
 This is the best, basic, batteries included webpack, babel, react, scss,
 starter repo available.
