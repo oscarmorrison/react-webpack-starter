@@ -7,9 +7,9 @@
     "watch": "./node_modules/.bin/webpack -d --watch",
     "dev": "./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors",
     "build": "NODE_ENV=production ./node_modules/.bin/webpack -p",
-    "test": "yarn test:jest && yarn lint",
-    "test:watch": "yarn jest:watch && yarn lint:watch",
-    "test:jest": "./node_modules/.bin/jest",
+    "test": "yarn jest && yarn lint",
+    "test:watch": "yarn jest:watch & yarn lint:watch",
+    "jest": "./node_modules/.bin/jest",
     "jest:watch": "./node_modules/.bin/jest --watch",
     "lint": "./node_modules/.bin/eslint src/js test --ext .js --ext .jsx",
     "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear"
