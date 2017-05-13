@@ -31,9 +31,6 @@ const base = {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
                 include: APP_DIR,
-                query: {
-                    presets: ['es2015', 'react']
-                }
             },
             {
                   test: /\.(jpg|png|svg)$/,
