@@ -48,7 +48,7 @@ this starter uses `yarn` by default, it includes the following yarn scripts:
 `test:watch:`  ./node_modules/.bin/jest --watch  
 
 ## how to use
-You can [download the repo here ](https://github.com/oscarmorrison/react-webpack-starter/archive/master.zip) t, and update the `package.json`.
+You can [download the repo here](https://github.com/oscarmorrison/react-webpack-starter/archive/master.zip), and update the `package.json`.
 
 Or alternative clone the repo:  
 `git clone git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
