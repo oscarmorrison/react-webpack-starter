@@ -1,15 +1,9 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
 
-//Styles
 import '../style/index.scss';
 
 class App extends React.Component {
-
-    constructor(props) {
-        super(props);
-        this.state = { foo: 'bar' }
-    }
 
     getWelcomeText = () => {
         return 'React Webpack Starter';
@@ -17,7 +11,7 @@ class App extends React.Component {
 
     render() {
         const welcomeText = this.getWelcomeText();
-        return(
+        return (
             <div>
                 <h1>{welcomeText}</h1>
             </div>
@@ -27,5 +21,5 @@ class App extends React.Component {
 
 render(
     <App />,
-    document.getElementById('app')
+    document.getElementById('app'),
 );
