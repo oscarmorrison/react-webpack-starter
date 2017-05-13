@@ -37,21 +37,20 @@ The pluggable linting utility for JavaScript and JSX.
 ├── LICENSE
 ├── README.md
 ├── package.json
+├── webpack.config.js
+├── yarn.lock
 ├── src
 │   ├── html
 │   │   └── index.html
 │   ├── js
 │   │   ├── index.jsx
 │   │   └── utilities
-│   │       └── random.js
-│   ├── package.json
-│   ├── style
-│   │   └── index.scss
-│   └── yarn.lock
-├── test
-│   └── random.test.js
-├── webpack.config.js
-└── yarn.lock
+│   │       └── general.js
+│   └── style
+│       └── index.scss
+└── test
+    └── generalUtility.test.js
+
 ```
 
 ### yarn 
