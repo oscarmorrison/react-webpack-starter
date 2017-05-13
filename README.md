@@ -14,7 +14,7 @@ starter repo available.
 │   ├── js
 │   │   ├── index.jsx
 │   │   └── utilities
-│   │       └── Random.js
+│   │       └── random.js
 │   ├── package.json
 │   ├── style
 │   │   └── index.scss

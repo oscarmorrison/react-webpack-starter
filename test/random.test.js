@@ -1,4 +1,4 @@
-import { randomInt, randomString } from '../src/js/utilities/Random';
+import { randomInt, randomString } from '../src/js/utilities/random';
 
 test('expect random to be in range, with max + min', () => {
     const max = 10, min = 5;
