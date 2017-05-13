@@ -8,12 +8,18 @@ class App extends React.Component {
 
     constructor(props) {
         super(props);
+        this.state = { foo: 'bar' }
+    }
+
+    getWelcomeText = () => {
+        return 'React Webpack Starter';
     }
 
     render() {
+        const welcomeText = this.getWelcomeText();
         return(
             <div>
-                <h1>React Webpack Starter</h1>
+                <h1>{welcomeText}</h1>
             </div>
         );
     }

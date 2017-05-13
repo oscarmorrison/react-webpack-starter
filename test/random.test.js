@@ -1,4 +1,4 @@
-import { randomInt, randomString } from '../src/js/utilities/random';
+import { randomInt, getUID } from '../src/js/utilities/general';
 
 test('expect random to be in range, with max + min', () => {
     const max = 10, min = 5;
@@ -16,7 +16,6 @@ test('expect random to be in range, with max', () => {
 
 
 test('expect random string with correct length', () => {
-    const length = 10;
-    const string = randomString(length);
-    expect(string.length).toBe(length);
+    const uid = getUID();
+    expect(uid.length).toBe(9);
 });
