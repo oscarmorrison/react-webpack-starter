@@ -14,7 +14,7 @@ const base = {
     entry: path.join(APP_DIR, 'js', 'index.jsx'),
     output: {
         path: BUILD_DIR,
-        filename: 'bundle.js'
+        filename: 'bundle.js',
     },
     module: {
         rules: [
@@ -25,7 +25,7 @@ const base = {
                     { loader: 'css-loader' },
                     { loader: 'postcss-loader' },
                     { loader: 'sass-loader' },
-                ]
+                ],
             },
             {
                 test: /\.jsx?$/,
@@ -33,52 +33,52 @@ const base = {
                 include: APP_DIR,
             },
             {
-                  test: /\.(jpg|png|svg)$/,
-                  loader: 'file-loader',
-            }
+                test: /\.(jpg|png|svg)$/,
+                loader: 'file-loader',
+            },
         ],
     },
     resolve: {
-        extensions: ['.js', '.jsx']
+        extensions: ['.js', '.jsx'],
     },
     plugins: [
         copyWebpackPlugin([
             {
                 from: 'src/html/index.html',
                 to: 'index.html',
-                force: true
+                force: true,
             },
         ]),
         new webpack.LoaderOptionsPlugin({
             options: {
                 postcss: [
                     autoprefixer({
-                        browsers: ['last 3 versions', '> 1%']
-                    })
+                        browsers: ['last 3 versions', '> 1%'],
+                    }),
                 ],
-            }
+            },
         }),
         new WebpackBuildNotifierPlugin(),
         new webpack.DefinePlugin({
             'process.env': {
-                'NODE_ENV': isProd ? JSON.stringify('production') : JSON.stringify('development')
-            }
+                NODE_ENV: isProd ? JSON.stringify('production') : JSON.stringify('development'),
+            },
         }),
-    ]
+    ],
 };
 
 const dev = {
     devtool: 'source-map',
-}
+};
 
 const prod = {
     plugins: [
         new webpack.optimize.UglifyJsPlugin({
             compress: {
-                warnings: false
-            }
-        })
-    ]
+                warnings: false,
+            },
+        }),
+    ],
 };
 
 module.exports = isProd ? merge(base, prod) : merge(base, dev);
