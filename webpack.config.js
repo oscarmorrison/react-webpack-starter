@@ -17,33 +17,33 @@ const base = {
         filename: 'bundle.js'
     },
     module: {
-        loaders: [
+        rules: [
             {
+                test: /\.scss$/,
+                use: [
+                    { loader: 'style-loader' },
+                    { loader: 'css-loader' },
+                    { loader: 'postcss-loader' },
+                    { loader: 'sass-loader' },
+                ]
+            },
+            {
+                test: /\.jsx?$/,
                 loader: 'babel-loader',
                 include: APP_DIR,
-                test: /\.jsx?$/,
                 query: {
                     presets: ['es2015', 'react']
                 }
             },
             {
-                loaders: ['style-loader', 'css-loader', 'postcss-loader', 'sass-loader'],
-                test: /\.scss$/
-            },
-            {
-                  loader: 'file-loader',
                   test: /\.(jpg|png|svg)$/,
+                  loader: 'file-loader',
             }
         ],
-        resolve: {
-            extensions: ["", ".js", ".jsx"]
-        }
     },
-    postcss: [
-        autoprefixer({
-            browsers: ['last 3 versions', '> 1%']
-        })
-    ],
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     plugins: [
         copyWebpackPlugin([
             {
@@ -52,6 +52,15 @@ const base = {
                 force: true
             },
         ]),
+        new webpack.LoaderOptionsPlugin({
+            options: {
+                postcss: [
+                    autoprefixer({
+                        browsers: ['last 3 versions', '> 1%']
+                    })
+                ],
+            }
+        }),
         new WebpackBuildNotifierPlugin(),
         new webpack.DefinePlugin({
             'process.env': {
@@ -63,13 +72,6 @@ const base = {
 
 const dev = {
     devtool: 'source-map',
-    devServer: {
-        headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Methods": "GET",
-            "Access-Control-Allow-Headers": "X-Requested-With, content-type, Authorization"
-        }
-    }
 }
 
 const prod = {

@@ -12,7 +12,9 @@ class App extends React.Component {
 
     render() {
         return(
-            <div>React Webpack Starter</div>
+            <div>
+                <h1>React Webpack Starter</h1>
+            </div>
         );
     }
 }
