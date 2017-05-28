@@ -15,7 +15,7 @@
     "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear",
     "setup": "node ./.setup.js && yarn init && yarn"
   },
-  "author": "oscar",
+  "author": "Oscar Morrison <github@oscarmorrison.com>",
   "license": "ISC",
   "dependencies": {
     "react": "^15.5.4",
@@ -51,10 +51,7 @@
   "directories": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oscarmorrison/react-webpack-starter.git"
-  },
+  "repository": "git+https://github.com/oscarmorrison/react-webpack-starter.git",
   "bugs": {
     "url": "https://github.com/oscarmorrison/react-webpack-starter/issues"
   },
