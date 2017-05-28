@@ -35,6 +35,8 @@ const cleanUp = () => {
     exec('rm -rf .git');
     console.log('initializing new git');
     exec('git init');
+    console.log('wipe README.md');
+    exec('echo "#README.md">README.md');
     console.log('remove setup file');
     exec('rm .setup.js');
     process.exit();
