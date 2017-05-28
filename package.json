@@ -1,8 +1,8 @@
 {
   "name": "react-webpack-starer",
-  "version": "1.1.0",
-  "description": "",
-  "main": "index.js",
+  "version": "1.2.0",
+  "description": "best react webpack, babel, jest, eslint starter project",
+  "main": "index.jsx",
   "scripts": {
     "watch": "./node_modules/.bin/webpack -d --watch",
     "dev": "./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors",
@@ -12,7 +12,8 @@
     "jest": "./node_modules/.bin/jest",
     "jest:watch": "./node_modules/.bin/jest --watch",
     "lint": "./node_modules/.bin/eslint src/js test --ext .js --ext .jsx",
-    "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear"
+    "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear",
+    "setup": "node ./.setup.js && yarn init"
   },
   "author": "oscar",
   "license": "ISC",
@@ -120,5 +121,16 @@
     "webpack-dev-server": "^2.4.5",
     "webpack-merge": "^4.1.0",
     "webpack-notifier": "^1.5.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscarmorrison/react-webpack-starter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oscarmorrison/react-webpack-starter/issues"
+  },
+  "homepage": "https://github.com/oscarmorrison/react-webpack-starter#readme"
 }

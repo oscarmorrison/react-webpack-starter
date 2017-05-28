@@ -4,6 +4,10 @@
 This is the best, basic, batteries included webpack, babel, react, scss,
 starter repo available.
 
+## Getting started
+`git clone git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
+`yarn setup`  
+
 ## Overview:
 ### [React](https://facebook.github.io/react/):
 a javascript library for building interfaces.  
@@ -55,14 +59,14 @@ The pluggable linting utility for JavaScript and JSX.
 
 ### yarn 
 this starter uses `yarn` by default, it includes the following yarn scripts:  
-`watch`: ./node_modules/.bin/webpack -d --watch  
-`dev`: ./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors  
-`build`: NODE_ENV=production ./node_modules/.bin/webpack -p  
-`test`:  yarn test:jest && yarn lint  
-`test:watch`:  yarn jest:watch && yarn lint:watch  
-`test:jest`:  ./node_modules/.bin/jest  
-`jest:watch`:  ./node_modules/.bin/jest --watch  
-`lint`:  ./node_modules/.bin/eslint src/js test --ext .js --ext .jsx  
+`watch`:  ./node_modules/.bin/webpack -d --watch
+`dev`:  ./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors
+`build`:  NODE_ENV=production ./node_modules/.bin/webpack -p
+`test`:  yarn jest && yarn lint
+`test:watch`:  yarn jest:watch & yarn lint:watch
+`jest`:  ./node_modules/.bin/jest
+`jest:watch`:  ./node_modules/.bin/jest --watch
+`lint`:  ./node_modules/.bin/eslint src/js test --ext .js --ext .jsx
 `lint:watch`:  ./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear
 
 ## how to use
