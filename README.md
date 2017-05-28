@@ -5,7 +5,8 @@ This is the best, basic, batteries included webpack, babel, react, scss,
 starter repo available.
 
 ## Getting started
-`git clone git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
+`git clone --depth 1 git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
+  
 `yarn setup`  
 
 ## Overview:
@@ -69,9 +70,6 @@ this starter uses `yarn` by default, it includes the following yarn scripts:
 `lint`:  ./node_modules/.bin/eslint src/js test --ext .js --ext .jsx
 `lint:watch`:  ./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear
 
-## how to use
-You can [download the repo here](https://github.com/oscarmorrison/react-webpack-starter/archive/master.zip), and update the `package.json`.
-
-Or alternative clone the repo:  
-`git clone git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
-then delete the .git dir, or change the repository url
+## download
+You can [download the repo here](https://github.com/oscarmorrison/react-webpack-starter/archive/master.zip), and run:  
+`yarn setup`
