@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-starter",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "best react webpack, babel, jest, eslint starter project",
   "main": "index.jsx",
   "scripts": {
@@ -15,82 +15,8 @@
     "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear",
     "setup": "node ./.setup.js && yarn init && yarn"
   },
-  "author": "oscar",
+  "author": "Oscar Morrison <github@oscarmorrison.com>",
   "license": "ISC",
-  "babel": {
-    "presets": [
-      [
-        "es2015",
-        {
-          "modules": false
-        }
-      ],
-      "react",
-      "stage-2"
-    ],
-    "env": {
-      "test": {
-        "presets": [
-          "es2015",
-          "react",
-          "stage-2"
-        ]
-      }
-    }
-  },
-  "eslintConfig": {
-    "parser": "babel-eslint",
-    "env": {
-      "browser": true,
-      "jest": true
-    },
-    "extends": "airbnb",
-    "plugins": [
-      "import",
-      "jsx-a11y",
-      "react"
-    ],
-    "rules": {
-      "indent": [
-        2,
-        4
-      ],
-      "max-len": [
-        0
-      ],
-      "no-param-reassign": [
-        0
-      ],
-      "react/forbid-prop-types": [
-        0
-      ],
-      "react/jsx-indent-props": [
-        2,
-        4
-      ],
-      "react/jsx-indent": [
-        0
-      ],
-      "react/prefer-stateless-function": [
-        0
-      ],
-      "react/prop-types": [
-        0
-      ],
-      "react/jsx-space-before-closing": [
-        0
-      ],
-      "react/no-multi-comp": [
-        0
-      ],
-      "no-mixed-operators": [
-        0
-      ],
-      "arrow-body-style": [
-        0
-      ]
-    }
-  },
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
@@ -125,10 +51,7 @@
   "directories": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/oscarmorrison/react-webpack-starter.git"
-  },
+  "repository": "git+https://github.com/oscarmorrison/react-webpack-starter.git",
   "bugs": {
     "url": "https://github.com/oscarmorrison/react-webpack-starter/issues"
   },
