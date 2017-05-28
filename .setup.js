@@ -6,7 +6,7 @@
 
 const fs = require('fs');
 const exec = require('child_process').exec;
-let packageJSON = require('../package.json');
+let packageJSON = require('./package.json');
 
 
 const writeFile = (json) => new Promise((resolve, reject) => {

@@ -60,15 +60,15 @@ The pluggable linting utility for JavaScript and JSX.
 
 ### yarn 
 this starter uses `yarn` by default, it includes the following yarn scripts:  
-`watch`:  ./node_modules/.bin/webpack -d --watch
-`dev`:  ./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors
-`build`:  NODE_ENV=production ./node_modules/.bin/webpack -p
-`test`:  yarn jest && yarn lint
-`test:watch`:  yarn jest:watch & yarn lint:watch
-`jest`:  ./node_modules/.bin/jest
-`jest:watch`:  ./node_modules/.bin/jest --watch
-`lint`:  ./node_modules/.bin/eslint src/js test --ext .js --ext .jsx
-`lint:watch`:  ./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear
+`watch`:  ./node_modules/.bin/webpack -d --watch  
+`dev`:  ./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors  
+`build`:  NODE_ENV=production ./node_modules/.bin/webpack -p  
+`test`:  yarn jest && yarn lint  
+`test:watch`:  yarn jest:watch & yarn lint:watch  
+`jest`:  ./node_modules/.bin/jest  
+`jest:watch`:  ./node_modules/.bin/jest --watch  
+`lint`:  ./node_modules/.bin/eslint src/js test --ext .js --ext .jsx  
+`lint:watch`:  ./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear  
 
 ## download
 You can [download the repo here](https://github.com/oscarmorrison/react-webpack-starter/archive/master.zip), and run:  
