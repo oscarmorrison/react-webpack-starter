@@ -1,6 +1,6 @@
 {
   "name": "react-webpack-starter",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "best react webpack, babel, jest, eslint starter project",
   "main": "index.jsx",
   "scripts": {
