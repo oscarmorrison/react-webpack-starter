@@ -18,9 +18,10 @@ const writeFile = (json) => new Promise((resolve, reject) => {
 
 
 const updatePackageJSON = () => {
-    packageJSON.author = '';
+    packageJSON.name = '';
     packageJSON.description = '';
     packageJSON.version = '0.0.1';
+    packageJSON.author = '';
     delete packageJSON.repository;
     delete packageJSON.bugs;
     delete packageJSON.homepage;
@@ -35,7 +36,7 @@ const cleanUp = () => {
     console.log('initializing new git');
     exec('git init');
     console.log('remove setup file');
-    exec('rm hello.txt');
+    exec('rm .setup.js');
     process.exit();
 }
 
