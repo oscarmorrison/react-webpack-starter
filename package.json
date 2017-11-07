@@ -3,6 +3,9 @@
   "version": "1.2.4",
   "description": "best react webpack, babel, jest, eslint starter project",
   "main": "index.jsx",
+  "engines": {
+      "node": "8"
+  },
   "scripts": {
     "watch": "./node_modules/.bin/webpack -d --watch",
     "dev": "./node_modules/.bin/webpack-dev-server -d --hot --inline --progress --colors",
@@ -16,7 +19,7 @@
     "setup": "node ./.setup.js && yarn init && yarn"
   },
   "author": "Oscar Morrison <github@oscarmorrison.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4"
