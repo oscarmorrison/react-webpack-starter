@@ -4,7 +4,6 @@ import { render } from 'react-dom';
 import '../style/index.scss';
 
 class App extends React.Component {
-
     getWelcomeText = () => {
         return 'React Webpack Starter';
     }

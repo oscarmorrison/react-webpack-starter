@@ -20,7 +20,7 @@ starter repo available.
 a javascript library for building interfaces.  
 - a basic setup, with an example index.jsx entry file. 
 
-### [Webpack 2](https://webpack.js.org/):
+### [Webpack 3](https://webpack.js.org/):
 a bundler for javascript and friends. Packs many modules into a few bundled assets. 
 - an excellent, basic webpack setup with the essentials. 
 - a production and a development configuration

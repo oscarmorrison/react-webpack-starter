@@ -16,6 +16,7 @@
     "jest:watch": "./node_modules/.bin/jest --watch",
     "lint": "./node_modules/.bin/eslint src/js test --ext .js --ext .jsx",
     "lint:watch": "./node_modules/.bin/esw src/js test --ext .js --ext .jsx -w --color --clear",
+    "lint:fix": "./node_modules/.bin/eslint src/js test --ext .js --ext .jsx --fix",
     "setup": "node ./.setup.js && yarn init && yarn"
   },
   "author": "Oscar Morrison <github@oscarmorrison.com>",
