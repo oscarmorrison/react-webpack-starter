@@ -12,7 +12,7 @@ starter repo available.
 
 ## Getting started
 `git clone --depth 1 git@github.com:oscarmorrison/react-webpack-starter.git [new-project-name]`  
-  
+`cd[new-project-name]`  
 `yarn setup`  
 
 ## Overview:
