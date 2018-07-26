@@ -4,7 +4,8 @@
 
 # React, Webpack, Babel, Jest, ESLint Starter  
 [![Build Status](https://travis-ci.org/oscarmorrison/react-webpack-starter.svg?branch=master)](https://travis-ci.org/oscarmorrison/react-webpack-starter)  [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/oscarmorrison/react-webpack-starter/issues)  
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)](https://github.com/oscarmorrison/react-webpack-starter/blob/master/LICENSE)  [![GitHub issues](https://img.shields.io/github/issues/oscarmorrison/react-webpack-starter.svg)](https://github.com/oscarmorrison/react-webpack-starter/issues)
+[![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg?style=plastic)](https://github.com/oscarmorrison/react-webpack-starter/blob/master/LICENSE)[![GitHub issues](https://img.shields.io/github/issues/badges/shields.svg?style=plastic)](https://github.com/oscarmorrison/react-webpack-starter/issues)
+
 
 
 This is the best, basic, batteries included webpack, babel, react, scss,
