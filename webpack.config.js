@@ -30,6 +30,9 @@ const base = {
             {
                 test: /\.jsx?$/,
                 loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                },
                 include: APP_DIR,
             },
             {
@@ -72,13 +75,9 @@ const dev = {
 };
 
 const prod = {
-    plugins: [
-        new webpack.optimize.UglifyJsPlugin({
-            compress: {
-                warnings: false,
-            },
-        }),
-    ],
+    optimization: {
+        minimize: true,
+    }
 };
 
 module.exports = isProd ? merge(base, prod) : merge(base, dev);
